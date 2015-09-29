@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 2.0
-Release  : 11
+Release  : 12
 URL      : http://downloads.sourceforge.net/tmux/tmux-2.0.tar.gz
 Source0  : http://downloads.sourceforge.net/tmux/tmux-2.0.tar.gz
 Summary  : No detailed summary available
