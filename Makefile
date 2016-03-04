@@ -1,4 +1,5 @@
 PKG_NAME := tmux
-URL := http://downloads.sourceforge.net/tmux/tmux-2.0.tar.gz
+URL := https://github.com/tmux/tmux/releases/download/2.1/tmux-2.1.tar.gz
+ARCHIVES :=
 
 include ../common/Makefile.common
