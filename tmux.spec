@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 2.1
-Release  : 14
+Release  : 15
 URL      : https://github.com/tmux/tmux/releases/download/2.1/tmux-2.1.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/2.1/tmux-2.1.tar.gz
 Summary  : No detailed summary available
