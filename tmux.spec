@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 2.6
-Release  : 21
+Release  : 22
 URL      : https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
 Summary  : No detailed summary available
