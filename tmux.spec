@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 2.6
-Release  : 23
+Release  : 24
 URL      : https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
 Summary  : No detailed summary available
@@ -47,9 +47,9 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1507212569
+export SOURCE_DATE_EPOCH=1522780689
 %configure --disable-static
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 
 %check
 export LANG=C
@@ -59,7 +59,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1507212569
+export SOURCE_DATE_EPOCH=1522780689
 rm -rf %{buildroot}
 %make_install
 

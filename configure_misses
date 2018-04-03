@@ -14,7 +14,6 @@ Configure miss: closefrom
 Configure miss: fgetln
 Configure miss: freezero
 Configure miss: getdtablecount
-Configure miss: getprogname
 Configure miss: recallocarray
 Configure miss: strtonum
 Configure miss: b64_ntop
