@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 2.8
-Release  : 27
+Release  : 28
 URL      : https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz
 Summary  : No detailed summary available
