@@ -23,5 +23,6 @@ Configure miss: stravis
 Configure miss: if getopt is suitable
 Configure miss: library containing fparseln
 Configure miss: library containing fdforkpty
+Configure miss: library containing kinfo_getfile
 Configure miss: whether TAILQ_REPLACE is declared
 Configure miss: whether F_CLOSEM is declared
