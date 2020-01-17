@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 2.9
-Release  : 30
+Release  : 31
 URL      : https://github.com/tmux/tmux/releases/download/2.9/tmux-2.9.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/2.9/tmux-2.9.tar.gz
 Summary  : A terminal multiplexer
