@@ -20,7 +20,6 @@ Configure miss: b64_ntop
 Configure miss: socket in -lxnet
 Configure miss: library containing imsg_init
 Configure miss: stravis
-Configure miss: if getopt is suitable
 Configure miss: library containing fdforkpty
 Configure miss: library containing kinfo_getfile
 Configure miss: whether TAILQ_REPLACE is declared
