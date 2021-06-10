@@ -19,7 +19,6 @@ Configure miss: ndir.h usability
 Configure miss: proc_pidinfo
 Configure miss: socket in -lxnet
 Configure miss: stravis
-Configure miss: strtonum
 Configure miss: sys/ndir.h
 Configure miss: sys/ndir.h presence
 Configure miss: sys/ndir.h usability
@@ -29,3 +28,4 @@ Configure miss: sys/tree.h usability
 Configure miss: whether F_CLOSEM is declared
 Configure miss: whether TAILQ_REPLACE is declared
 Configure miss: working recallocarray
+Configure miss: working strtonum
