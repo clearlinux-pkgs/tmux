@@ -2,7 +2,6 @@ Configure miss: b64_ntop
 Configure miss: bitstring.h
 Configure miss: bitstring.h presence
 Configure miss: bitstring.h usability
-Configure miss: closefrom
 Configure miss: fgetln
 Configure miss: freezero
 Configure miss: getdtablecount
@@ -25,6 +24,9 @@ Configure miss: sys/ndir.h usability
 Configure miss: sys/tree.h
 Configure miss: sys/tree.h presence
 Configure miss: sys/tree.h usability
+Configure miss: ucred.h
+Configure miss: ucred.h presence
+Configure miss: ucred.h usability
 Configure miss: whether F_CLOSEM is declared
 Configure miss: whether TAILQ_REPLACE is declared
 Configure miss: working recallocarray
