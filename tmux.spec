@@ -4,7 +4,7 @@
 #
 Name     : tmux
 Version  : 3.3a
-Release  : 40
+Release  : 41
 URL      : https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 Summary  : No detailed summary available
@@ -61,12 +61,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655852274
+export SOURCE_DATE_EPOCH=1664898387
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-export FCFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-export FFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-export CXXFLAGS="$CXXFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -78,10 +78,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1655852274
+export SOURCE_DATE_EPOCH=1664898387
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/tmux
-cp %{_builddir}/tmux-3.3a/COPYING %{buildroot}/usr/share/package-licenses/tmux/a8d32eee6673ecc60a6b42b9f33211ba184950db
+cp %{_builddir}/tmux-%{version}/COPYING %{buildroot}/usr/share/package-licenses/tmux/a8d32eee6673ecc60a6b42b9f33211ba184950db || :
 %make_install
 
 %files
