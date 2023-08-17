@@ -5,7 +5,7 @@
 #
 Name     : tmux
 Version  : 3.3a
-Release  : 42
+Release  : 43
 URL      : https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 Source0  : https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 Summary  : No detailed summary available
@@ -25,6 +25,8 @@ BuildRequires : pkgconfig(tinfo)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
+Patch1: backport-CVE-2022-47016-fix.patch
+Patch2: backport-tmux-ncurses-fixes.patch
 
 %description
 Welcome to tmux!
@@ -60,19 +62,21 @@ man components for the tmux package.
 %prep
 %setup -q -n tmux-3.3a
 cd %{_builddir}/tmux-3.3a
+%patch -P 1 -p1
+%patch -P 2 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689750198
+export SOURCE_DATE_EPOCH=1692308064
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
-%configure --disable-static
+%reconfigure --disable-static
 make  %{?_smp_mflags}
 
 %check
@@ -83,7 +87,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1689750198
+export SOURCE_DATE_EPOCH=1692308064
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/tmux
 cp %{_builddir}/tmux-%{version}/COPYING %{buildroot}/usr/share/package-licenses/tmux/a8d32eee6673ecc60a6b42b9f33211ba184950db || :
