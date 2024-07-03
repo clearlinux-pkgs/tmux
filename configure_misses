@@ -1,33 +1,50 @@
 Configure miss: b64_ntop
+Configure miss: b64_ntop
 Configure miss: bitstring.h
-Configure miss: bitstring.h presence
-Configure miss: bitstring.h usability
+Configure miss: bitstring.h
+Configure miss: fgetln
 Configure miss: fgetln
 Configure miss: freezero
+Configure miss: freezero
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getdtablecount
+Configure miss: getdtablecount
+Configure miss: htonll
+Configure miss: htonll
 Configure miss: libproc.h
-Configure miss: libproc.h presence
-Configure miss: libproc.h usability
+Configure miss: libproc.h
+Configure miss: library containing fdforkpty
 Configure miss: library containing fdforkpty
 Configure miss: library containing imsg_init
+Configure miss: library containing imsg_init
+Configure miss: library containing kinfo_getfile
 Configure miss: library containing kinfo_getfile
 Configure miss: library containing sys_signame
+Configure miss: library containing sys_signame
+Configure miss: lock-command... checking for vlock
+Configure miss: lock-command... checking for vlock
 Configure miss: ndir.h
-Configure miss: ndir.h presence
-Configure miss: ndir.h usability
+Configure miss: ndir.h
+Configure miss: ntohll
+Configure miss: ntohll
+Configure miss: proc_pidinfo
 Configure miss: proc_pidinfo
 Configure miss: socket in -lxnet
+Configure miss: socket in -lxnet
+Configure miss: stravis
 Configure miss: stravis
 Configure miss: sys/ndir.h
-Configure miss: sys/ndir.h presence
-Configure miss: sys/ndir.h usability
+Configure miss: sys/ndir.h
 Configure miss: sys/tree.h
-Configure miss: sys/tree.h presence
-Configure miss: sys/tree.h usability
+Configure miss: sys/tree.h
 Configure miss: ucred.h
-Configure miss: ucred.h presence
-Configure miss: ucred.h usability
+Configure miss: ucred.h
+Configure miss: whether F_CLOSEM is declared
 Configure miss: whether F_CLOSEM is declared
 Configure miss: whether TAILQ_REPLACE is declared
+Configure miss: whether TAILQ_REPLACE is declared
 Configure miss: working recallocarray
+Configure miss: working recallocarray
+Configure miss: working strtonum
 Configure miss: working strtonum
